@@ -222,7 +222,7 @@ npm run start
 Realiza una solicitud POST a `/auth/login` para obtener un token JWT. Usa ese token para acceder a rutas protegidas.
 
 # Imagen de flujo 
-![Flujo de CORS](./imgs/jwt.png)
+![Flujo de jwt](./imgs/jwt.png)
 
 ### Explicación del Diagrama UML
 
