@@ -1,3 +1,4 @@
+// eslint-disable-next-line prettier/prettier
 import { ExceptionFilter, Catch, ArgumentsHost, HttpException } from '@nestjs/common';
 
 @Catch(HttpException)

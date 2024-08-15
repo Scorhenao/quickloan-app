@@ -11,16 +11,3 @@ export class LoansService {
     }
   }
 }
-
-@Post()
-createLoan(@Body() createLoanDto: any) {
-  return `Loan created for ${createLoanDto.userId}`;
-}
-```
-
-- Implementar un `ValidationPipe` para validar los datos de entrada:
-```typescript
-import { ValidationPipe } from '@nestjs/common';
-
-// En main.ts
-app.useGlobalPipes(new ValidationPipe());
