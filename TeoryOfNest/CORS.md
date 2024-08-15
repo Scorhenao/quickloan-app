@@ -115,3 +115,15 @@
 
 # Imagen de flujo 
 ![Flujo de CORS](./imgs/cors.png)
+
+### Explicacion del diagrama uml
+- **`@startuml y @enduml`**: Estas etiquetas encierran el código PlantUML que define el diagrama.
+- **`title`**: Define el título del diagrama.
+- **`package "src"`**: Agrupa los elementos dentro del paquete src, que es el directorio base de tu aplicación NestJS.
+- **`package "common"`**: Dentro de src, agrupa el middleware en el paquete common.
+- **`package "middleware"`**: Dentro de common, agrupa las clases relacionadas con el middleware.
+- **`class CorsMiddleware`**: Define la clase CorsMiddleware, que implementa el middleware de CORS. Contiene el método use y atributos privados para configurar CORS.
+- **`class AppModule`**: Define el módulo principal AppModule, que configura y usa el CorsMiddleware.
+- **`class Main`**: Representa el punto de entrada de la aplicación en el archivo main.ts, que configura la aplicación y el CORS.
+- **`Main ..> AppModule`**: Representa que Main configura AppModule.
+- **`AppModule ..> CorsMiddleware`**: Muestra que AppModule utiliza CorsMiddleware.
