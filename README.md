@@ -76,5 +76,5 @@ Nest is [MIT licensed](LICENSE).
 ```text
   npm install class-validator
   npm install class-transformer
+  npm i --save @nestjs/typeorm typeorm mysql2
 ```
-# Development dependencies 
